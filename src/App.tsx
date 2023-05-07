@@ -1,23 +1,24 @@
 import React from 'react';
+import { Greet } from './components/Greet';
 
 function App() {
   return (
-    <div className="relative h-screen bg-gray-900">
-      <div 
-        className="
-          absolute 
-          top-1/2 
-          left-1/2 
-          -translate-x-1/2 
-          -translate-y-1/2 
-          max-w-xl 
-          bg-white 
-          p-4 
-          rounded
-        "
-      >
-        <h1 className='text-3xl font-bold'>Helloo</h1>
-        <p>Hello react typescript with tailwind css</p>
+    <div className="relative min-h-screen bg-gray-900">
+      <div className="flex gap-2 p-2">
+        <Greet 
+          /**
+           * when using typed props, i can't asign another properties except the defined one
+           * and the key properties.
+           * 
+           * 
+           * the properties also have to be same type with defined one
+           */
+          name='Hadi' 
+          // name=12 // this throw an error
+          // anotherValue="hello"  // it also applies
+        />
+        <Greet name='Ajit'/>
+        <Greet name='Agus'/>
       </div>
     </div>
   );

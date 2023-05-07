@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="relative h-screen bg-gray-900">
+      <div 
+        className="
+          absolute 
+          top-1/2 
+          left-1/2 
+          -translate-x-1/2 
+          -translate-y-1/2 
+          max-w-xl 
+          bg-white 
+          p-4 
+          rounded
+        "
+      >
+        <h1 className='text-3xl font-bold'>Helloo</h1>
+        <p>Hello react typescript with tailwind css</p>
+      </div>
     </div>
   );
 }

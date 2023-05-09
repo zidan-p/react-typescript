@@ -11,6 +11,7 @@ function App() {
         {pagesData.map((page, index) => (
           <Route
           index={page.path === "/" ? true : false}
+          path={page.path}
           element={<page.Element />} 
           />
         ))}

@@ -1,7 +1,6 @@
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 import { MainLayout } from "./layout/MainLayout";
 import { pagesData } from "./data/pagesData";
-import { BasicProps } from "./pages/BasicProps";
 
 function App() {
   return (

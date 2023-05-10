@@ -29,7 +29,7 @@ export const Sidebar = (porps: SidebarProps) => {
                 );
               }}
             >
-              {route.name}
+             {index + 1}.  {route.name}
             </NavLink>
           </li>
         ))}
@@ -37,3 +37,5 @@ export const Sidebar = (porps: SidebarProps) => {
     </div>
   );
 };
+
+

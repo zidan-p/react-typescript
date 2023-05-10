@@ -3,6 +3,8 @@ import { AdvanceProps } from "../pages/AdvanceProps";
 import { BasicProps } from "../pages/BasicProps";
 import { EventProps } from "../pages/eventProps/EventProps";
 import { StyleProps } from "../pages/styleProps/StyleProps";
+import { LoggedIn } from "../components/state/loggedIn";
+import { UseStateHook } from "../pages/useStateHook";
 
 type pagesDataType = {
     path: string;
@@ -30,5 +32,10 @@ export const pagesData : pagesDataType = [
         path: "/style-props",
         name: "style props",
         Element: StyleProps
+    },
+    {
+        path: "/use-hook-one",
+        name: "using usestate 1",
+        Element: UseStateHook
     }
 ];

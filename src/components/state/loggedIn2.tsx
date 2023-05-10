@@ -1,0 +1,35 @@
+import { useState } from "react";
+
+
+
+
+export const LoggedIn2 = () => {
+    const [isLogged, setLogged] = useState(false); 
+    const handleLogin = () => {
+        setLogged(true);
+    }
+    const handleLogout = () => {
+        setLogged(false);
+    }
+    return (
+        <div className="bg-white p-2 rounded">
+            <h2 className="text-3xl font-bold mb-2">
+                User is 
+                {isLogged ? (
+                     <span className="text-green-700"> Log In</span>
+                ):(
+                     <span className="text-red-700"> Log Out</span>
+                )}
+            </h2>
+            <p className="text-gray-700 text-sm mb-2">this is simple logg in / log out project. use buttons bellow to change it value</p>
+            <div className="flex gap-2">
+                <button onClick={handleLogin} className="bg-gray-900 shadow px-3 p-1 rounded text-white hover:bg-gray-800 active:bg-gray-700">
+                    login
+                    </button>
+                <button onClick={handleLogout} className="bg-gray-300 shadow px-3 p-1 rounded text-gray-900 hover:bg-gray-200 active:bg-gray-100">
+                    Logout
+                </button>
+            </div>
+        </div>
+    )
+}

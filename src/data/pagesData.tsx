@@ -6,6 +6,7 @@ import { StyleProps } from "../pages/styleProps/StyleProps";
 import { LoggedIn } from "../components/state/loggedIn";
 import { UseStateHook } from "../pages/useStateHook";
 import { UseStateFutureValue } from "../pages/useStateFutureValue";
+import { UseStateTypeAssertion } from "../pages/useStateTypeAssertion";
 
 type pagesDataType = {
     path: string;
@@ -43,5 +44,11 @@ export const pagesData : pagesDataType = [
         path: "/usestate-future-value",
         name: "use useState 2",
         Element: UseStateFutureValue
-    }
+    },
+    {
+        path: "/usestate-type-assertion",
+        name: "use useState assertion",
+        Element: UseStateTypeAssertion
+    },
+
 ];

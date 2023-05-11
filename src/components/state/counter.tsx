@@ -10,10 +10,19 @@ type CounterState = {
     count: number;
 }
 
-type CounterAction = {
+type UpdateAction = {
     payload: number;
     type: "increment" | "decrement";
 }
+
+// it will make typescript chech
+// if type is reset then we don;t use payload
+type ResetAction = {
+    type : "reset"
+}
+
+type CounterAction = UpdateAction | ResetAction;
+
 
 function reducer(state : CounterState, action : CounterAction) : CounterState{
     switch(action.type){
@@ -23,6 +32,9 @@ function reducer(state : CounterState, action : CounterAction) : CounterState{
         case "decrement" : 
             return {count : state.count - action.payload}   
             break
+        case "reset" : 
+            return initialState;
+            break;
         default:
             return state;
     }
@@ -49,6 +61,12 @@ export const Counter = () => {
                     className="bg-gray-300 shadow px-3 p-1 rounded text-gray-900 hover:bg-gray-200 active:bg-gray-100"
                 >
                     - 10
+                </button>
+                <button 
+                    onClick={()=>dispatch({type:"reset"})} 
+                    className="bg-gray-300 shadow px-3 p-1 rounded text-gray-900 hover:bg-gray-200 active:bg-gray-100"
+                >
+                    Reset
                 </button>
             </div>
         </div>

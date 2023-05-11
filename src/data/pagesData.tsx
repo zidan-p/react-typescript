@@ -8,6 +8,7 @@ import { UseStateHook } from "../pages/useStateHook";
 import { UseStateFutureValue } from "../pages/useStateFutureValue";
 import { UseStateTypeAssertion } from "../pages/useStateTypeAssertion";
 import { UseReducerHook } from "../pages/useReducerHook";
+import { UseContextHook } from "../pages/useContextHook";
 
 type pagesDataType = {
     path: string;
@@ -56,5 +57,10 @@ export const pagesData : pagesDataType = [
         name: "using useReducer react",
         Element: UseReducerHook
     },
+    {
+        path: "/usecontext",
+        name: "using context hook",
+        Element: UseContextHook
+    }
 
 ];

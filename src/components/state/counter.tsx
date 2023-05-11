@@ -16,7 +16,7 @@ type UpdateAction = {
 }
 
 // it will make typescript chech
-// if type is reset then we don;t use payload
+// if type is reset then we don't use payload
 type ResetAction = {
     type : "reset"
 }

@@ -3,12 +3,12 @@ import { AdvanceProps } from "../pages/AdvanceProps";
 import { BasicProps } from "../pages/BasicProps";
 import { EventProps } from "../pages/eventProps/EventProps";
 import { StyleProps } from "../pages/styleProps/StyleProps";
-import { LoggedIn } from "../components/state/loggedIn";
 import { UseStateHook } from "../pages/useStateHook";
 import { UseStateFutureValue } from "../pages/useStateFutureValue";
 import { UseStateTypeAssertion } from "../pages/useStateTypeAssertion";
 import { UseReducerHook } from "../pages/useReducerHook";
 import { UseContextHook } from "../pages/useContextHook";
+import { UseContextFutureValue } from "../pages/useContextFutureValue";
 
 type pagesDataType = {
     path: string;
@@ -61,6 +61,11 @@ export const pagesData : pagesDataType = [
         path: "/usecontext",
         name: "using context hook",
         Element: UseContextHook
+    },
+    {
+        path: "/usecontext-future-value",
+        name: "using context with future value",
+        Element : UseContextFutureValue
     }
 
 ];

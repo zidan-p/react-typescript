@@ -7,6 +7,7 @@ import { LoggedIn } from "../components/state/loggedIn";
 import { UseStateHook } from "../pages/useStateHook";
 import { UseStateFutureValue } from "../pages/useStateFutureValue";
 import { UseStateTypeAssertion } from "../pages/useStateTypeAssertion";
+import { UseReducerHook } from "../pages/useReducerHook";
 
 type pagesDataType = {
     path: string;
@@ -49,6 +50,11 @@ export const pagesData : pagesDataType = [
         path: "/usestate-type-assertion",
         name: "use useState assertion",
         Element: UseStateTypeAssertion
+    },
+    {
+        path: "/usereducer",
+        name: "using useReducer react",
+        Element: UseReducerHook
     },
 
 ];

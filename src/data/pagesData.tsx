@@ -12,6 +12,7 @@ import { UseContextFutureValue } from "../pages/useContextFutureValue";
 import { UseRefHook } from "../pages/useRefHook";
 import { ClassComponent } from "../pages/classComponent";
 import { ComponentProps } from "../pages/componentPorps";
+import { GenericProps } from "../pages/genericProps";
 
 type pagesDataType = {
     path: string;
@@ -84,6 +85,11 @@ export const pagesData : pagesDataType = [
         path: "/component-advance",
         name : "component props more advance",
         Element : ComponentProps
+    },
+    {
+        path: "/generic-props",
+        name : "use generic props",
+        Element : GenericProps
     },
 
 

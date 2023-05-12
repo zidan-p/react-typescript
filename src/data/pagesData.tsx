@@ -13,6 +13,7 @@ import { UseRefHook } from "../pages/useRefHook";
 import { ClassComponent } from "../pages/classComponent";
 import { ComponentProps } from "../pages/componentPorps";
 import { GenericProps } from "../pages/genericProps";
+import { RestrictingProps } from "../pages/restrictingProps";
 
 type pagesDataType = {
     path: string;
@@ -91,6 +92,9 @@ export const pagesData : pagesDataType = [
         name : "use generic props",
         Element : GenericProps
     },
-
-
+    {
+        path: "/restrciting-props",
+        name : "restricting props",
+        Element : RestrictingProps
+    },
 ];

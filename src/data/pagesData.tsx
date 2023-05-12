@@ -9,6 +9,7 @@ import { UseStateTypeAssertion } from "../pages/useStateTypeAssertion";
 import { UseReducerHook } from "../pages/useReducerHook";
 import { UseContextHook } from "../pages/useContextHook";
 import { UseContextFutureValue } from "../pages/useContextFutureValue";
+import { UseRefHook } from "../pages/useRefHook";
 
 type pagesDataType = {
     path: string;
@@ -66,6 +67,11 @@ export const pagesData : pagesDataType = [
         path: "/usecontext-future-value",
         name: "using context with future value",
         Element : UseContextFutureValue
+    },
+    {
+        path: "/useref-hook",
+        name: "useRef hook",
+        Element : UseRefHook
     }
 
 ];

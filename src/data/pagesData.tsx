@@ -15,6 +15,7 @@ import { ComponentProps } from "../pages/componentPorps";
 import { GenericProps } from "../pages/genericProps";
 import { RestrictingProps } from "../pages/restrictingProps";
 import { TemplateLiteral } from "../pages/TemplateLiteral";
+import { WrappingHtml } from "../pages/wrappingHtml";
 
 type pagesDataType = {
     path: string;
@@ -102,5 +103,10 @@ export const pagesData : pagesDataType = [
         path: "/template-literal",
         name : "using template literal and excluding",
         Element : TemplateLiteral
+    },
+    {
+        path: "/wrapping-html",
+        name : "wrap html",
+        Element : WrappingHtml
     },
 ];

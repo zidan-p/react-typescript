@@ -11,6 +11,7 @@ import { UseContextHook } from "../pages/useContextHook";
 import { UseContextFutureValue } from "../pages/useContextFutureValue";
 import { UseRefHook } from "../pages/useRefHook";
 import { ClassComponent } from "../pages/classComponent";
+import { ComponentProps } from "../pages/componentPorps";
 
 type pagesDataType = {
     path: string;
@@ -78,6 +79,12 @@ export const pagesData : pagesDataType = [
         path: "/class-component",
         name : "class component in ts",
         Element : ClassComponent
-    }
+    },
+    {
+        path: "/component-advance",
+        name : "component props more advance",
+        Element : ComponentProps
+    },
+
 
 ];

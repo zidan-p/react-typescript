@@ -14,6 +14,9 @@ type ButtonProps = {
     "children" 
 >
 
+// actually there are many more thing that need to be builded in this step
+// but because  my deadline i abandoned it
+
 
 export const Button = ({variant, children, ...rest} : ButtonProps) => {
     return(

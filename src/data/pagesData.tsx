@@ -10,6 +10,7 @@ import { UseReducerHook } from "../pages/useReducerHook";
 import { UseContextHook } from "../pages/useContextHook";
 import { UseContextFutureValue } from "../pages/useContextFutureValue";
 import { UseRefHook } from "../pages/useRefHook";
+import { ClassComponent } from "../pages/classComponent";
 
 type pagesDataType = {
     path: string;
@@ -72,6 +73,11 @@ export const pagesData : pagesDataType = [
         path: "/useref-hook",
         name: "useRef hook",
         Element : UseRefHook
+    },
+    {
+        path: "/class-component",
+        name : "class component in ts",
+        Element : ClassComponent
     }
 
 ];

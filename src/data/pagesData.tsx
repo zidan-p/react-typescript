@@ -16,6 +16,7 @@ import { GenericProps } from "../pages/genericProps";
 import { RestrictingProps } from "../pages/restrictingProps";
 import { TemplateLiteral } from "../pages/TemplateLiteral";
 import { WrappingHtml } from "../pages/wrappingHtml";
+import { ExtractProps } from "../pages/extractProps";
 
 type pagesDataType = {
     path: string;
@@ -108,5 +109,10 @@ export const pagesData : pagesDataType = [
         path: "/wrapping-html",
         name : "wrap html",
         Element : WrappingHtml
+    },
+    {
+        path: "/extract-props",
+        name : "extracting type from anither props",
+        Element : ExtractProps
     },
 ];

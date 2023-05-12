@@ -14,6 +14,7 @@ import { ClassComponent } from "../pages/classComponent";
 import { ComponentProps } from "../pages/componentPorps";
 import { GenericProps } from "../pages/genericProps";
 import { RestrictingProps } from "../pages/restrictingProps";
+import { TemplateLiteral } from "../pages/TemplateLiteral";
 
 type pagesDataType = {
     path: string;
@@ -96,5 +97,10 @@ export const pagesData : pagesDataType = [
         path: "/restrciting-props",
         name : "restricting props",
         Element : RestrictingProps
+    },
+    {
+        path: "/template-literal",
+        name : "using template literal and excluding",
+        Element : TemplateLiteral
     },
 ];

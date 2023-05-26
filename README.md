@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 My repo for storing my learning activity of react with typescript. however, because it is my firsr project documentation i wrote in english, maybe you will find many error grammar.
 
 ## Published Site
-
+https://react-typescript-nu.vercel.app/
 
 ## Available Scripts
 

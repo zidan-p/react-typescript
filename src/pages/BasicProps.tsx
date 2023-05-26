@@ -46,12 +46,12 @@ export const BasicProps = () => {
             <h2 className='text-white text-xl'>Greet list</h2>
             <div className="flex flex-wrap gap-2 p-2">
               <Greet 
-                name='Hadi'
+                name='Putra'
                 messageCount={10} 
                 logged={true}
               />
               <Greet 
-                name='ajit'
+                name='Zidan'
                 messageCount={10} 
                 logged={false}
               />
